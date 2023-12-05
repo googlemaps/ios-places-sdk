@@ -1,5 +1,4 @@
-// swift-tools-version: 5.7
-
+// swift-tools-version: 5.5
 //
 // Copyright 2023 Google LLC
 //
@@ -18,7 +17,7 @@
 import PackageDescription
 
 let package = Package(
-  name: "GooglePlaces",
+  name: "GooglePlaces", platforms: [.iOS(.v14)],
   products: [
     .library(
       name: "GooglePlaces",
@@ -35,7 +34,15 @@ let package = Package(
       resources: [
         .copy("Resources/GooglePlaces.bundle")
       ],
-      publicHeadersPath: "Sources"
+      publicHeadersPath: "Sources",
+      linkerSettings: [
+        .linkedLibrary("c++"),
+        .linkedLibrary("z"),
+        .linkedFramework("CoreGraphics"),
+        .linkedFramework("CoreLocation"),
+        .linkedFramework("QuartzCore"),
+        .linkedFramework("UIKit"),
+      ]
     ),
   ]
 )
