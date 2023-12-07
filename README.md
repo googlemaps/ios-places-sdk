@@ -23,10 +23,10 @@ the Places SDK for iOS
 1.  Follow the instructions for
     [adding package dependencies to your app in Xcode](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app).
 
-2.  In the prompt that appears, enter this GitHub repository:
+2.  In the "Enter Package URL" field, enter this GitHub repository:
 
     ```
-    https://github.com/googlemaps/ios-places-sdk.git
+    https://github.com/googlemaps/ios-places-sdk
     ```
 
 3.  Select the
