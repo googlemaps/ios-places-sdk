@@ -39,18 +39,6 @@ the Places SDK for iOS
     [instructions](https://developers.google.com/maps/documentation/places/ios-sdk/config#get-an-api-key)
     to add your API key to your app.
 
-Alternatively, you can add the following to the `dependencies` value of your
-`Package.swift` file:
-
-```
-dependencies: [
-  .package(
-    url: "https://github.com/googlemaps/ios-places-sdk.git",
-    .upToNextMajor(from: "8.3.0")
-  )
-]
-```
-
 ## Sample App
 
 See samples demonstrating use of the Places SDK for iOS on
