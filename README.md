@@ -32,7 +32,7 @@ the Places SDK for iOS
 3. Select the
     [version](https://developers.google.com/maps/documentation/places/ios-sdk/versions)
     of the Places SDK for iOS that you want to use. For new projects, we
-    recommend specifying the latest version and using the "Up to Next Major
+    recommend specifying the latest version and using the "Exact
     Version" option.
 
 4. Follow the
