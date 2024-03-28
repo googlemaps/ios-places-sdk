@@ -1,6 +1,6 @@
 // swift-tools-version: 5.5
 //
-// Copyright 2023 Google LLC
+// Copyright 2024 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -25,14 +25,14 @@ let package = Package(
   ],
   dependencies: [],
   targets: [
-    .binaryTarget(name: "GooglePlaces", url: "https://dl.google.com/geosdk/swiftpm/8.3.0/GooglePlaces_3p.xcframework.zip", checksum: "fc5539677cdf6c0ce32f04af6f347abdc918f49c5b84a60d6ea90eef058b2ef3"),
+    .binaryTarget(name: "GooglePlaces", url: "https://dl.google.com/geosdk/swiftpm/8.5.0/GooglePlaces_3p.xcframework.zip", checksum: "e336ff94e3bd1311d9a0bc5c1f1847220273ff8b976389ba4d7a7ec01bdbe1ea"),
     .target(
       name: "GooglePlacesTarget",
       dependencies: ["GooglePlaces"],
-      path: "GooglePlaces",
+      path: "Places",
       sources: ["GMSEmpty.m"],
       resources: [
-        .copy("Resources/GooglePlaces.bundle")
+        .copy("Resources/GooglePlacesResources/GooglePlaces.bundle")
       ],
       publicHeadersPath: "Sources",
       linkerSettings: [
