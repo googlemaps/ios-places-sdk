@@ -41,6 +41,7 @@ let package = Package(
         .linkedFramework("CoreGraphics"),
         .linkedFramework("CoreLocation"),
         .linkedFramework("QuartzCore"),
+        .linkedFramework("Security"),
         .linkedFramework("UIKit"),
       ]
     ),
