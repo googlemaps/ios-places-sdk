@@ -21,7 +21,7 @@ let package = Package(
   products: [
     .library(
       name: "GooglePlaces",
-      targets: ["Places"]),
+      targets: ["GooglePlacesPlacesTarget"]),
   ],
   dependencies: [],
   targets: [
@@ -31,7 +31,7 @@ let package = Package(
       checksum: "61e4a3214a55f74937d66a6fe451dd934bef7cec05029850b95bcac7c5ebd963"
     ),
     .target(
-      name: "Places",
+      name: "GooglePlacesPlacesTarget",
       dependencies: ["GooglePlaces"],
       path: "Places",
       sources: ["GMSEmpty.m"],
