@@ -17,23 +17,25 @@
 import PackageDescription
 
 let package = Package(
-  name: "GooglePlaces", platforms: [.iOS(.v14)],
+  name: "GooglePlaces", platforms: [.iOS(.v15)],
   products: [
     .library(
       name: "GooglePlaces",
-      targets: ["GooglePlacesTarget"]),
+      targets: ["Places"]),
   ],
   dependencies: [],
   targets: [
-    .binaryTarget(name: "GooglePlaces", url: "https://dl.google.com/geosdk/swiftpm/8.5.0/GooglePlaces_3p.xcframework.zip", checksum: "e336ff94e3bd1311d9a0bc5c1f1847220273ff8b976389ba4d7a7ec01bdbe1ea"),
+    .binaryTarget(
+      name: "GooglePlaces",
+      url: "https://dl.google.com/geosdk/swiftpm/9.0.0/GooglePlaces_3p.xcframework.zip",
+      checksum: "61e4a3214a55f74937d66a6fe451dd934bef7cec05029850b95bcac7c5ebd963"
+    ),
     .target(
-      name: "GooglePlacesTarget",
+      name: "Places",
       dependencies: ["GooglePlaces"],
       path: "Places",
       sources: ["GMSEmpty.m"],
-      resources: [
-        .copy("Resources/GooglePlacesResources/GooglePlaces.bundle")
-      ],
+      resources: [.copy("Resources/GooglePlacesResources/GooglePlaces.bundle")],
       publicHeadersPath: "Sources",
       linkerSettings: [
         .linkedLibrary("c++"),
