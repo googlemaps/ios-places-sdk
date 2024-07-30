@@ -21,7 +21,7 @@ let package = Package(
   products: [
     .library(
       name: "GooglePlaces",
-      targets: ["GooglePlacesTarget"]),
+      targets: ["GooglePlacesTarget"])
   ],
   dependencies: [],
   targets: [
