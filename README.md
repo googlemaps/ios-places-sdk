@@ -1,4 +1,6 @@
-# Google Places SDK For iOS Swift package
+<!--* freshness: { exempt: true } *-->
+
+# Google Places SDK For iOS Swift package.
 
 ## Description
 
