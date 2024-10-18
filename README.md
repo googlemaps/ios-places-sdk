@@ -4,10 +4,12 @@
 
 ## Description
 
-This repository contains the Swift package for the
-[Places SDK for iOS](https://developers.google.com/maps/documentation/places/ios-sdk).
-For additional methods of installing the Places SDK for iOS including CocoaPods,
-see the Places SDK for iOS
+This repository contains the Swift packages for the
+[Places SDK for iOS](https://developers.google.com/maps/documentation/places/ios-sdk)
+and
+[Places Swift SDK for iOS](https://developers.google.com/maps/documentation/places/ios-sdk/reference/swift/Classes).
+For additional methods of installing the Places SDK, and Places Swift SDK for
+iOS including CocoaPods, see the Places SDK for iOS
 [documentation](https://developers.google.com/maps/documentation/places/ios-sdk/config).
 
 ## Requirements
