@@ -10,6 +10,15 @@ For additional methods of installing the Places SDK for iOS including CocoaPods,
 see the Places SDK for iOS
 [documentation](https://developers.google.com/maps/documentation/places/ios-sdk/config).
 
+## Addition of GooglePlacesSwift to this repository
+This GitHub repository now contains the latest versions of both GooglePlaces and GooglePlacesSwift Swift Packages. Visit [the developer documentation](https://developers.google.com/maps/documentation/places/ios-sdk/google-places-swift) to learn more about GooglePlacesSwift. 
+
+**Note:** The version of the GitHub release matches the version of GooglePlaces, but not the version of GooglePlacesSwift. We take care of the version dependency between GooglePlaces and GooglePlacesSwift in the package manifest. For example, to use version 9.2.0 of GooglePlaces,  just choose 9.2.0 on the Xcode package dependency screen. However, if you would like to use version 0.3.0 of GooglePlacesSwift, you must choose the corresponding version of the GooglePlaces, which is 9.2.0. 
+
+If you have been using GooglePlaces through this GitHub repository and now would like to also try GooglePlacesSwift, remove the GitHub URL from your Xcode project and add it again to see the prompt to choose GooglePlacesSwift in addition to GooglePlaces. 
+
+If you have been using GooglePlaces through a different GitHub repository, remove that URL, add this GitHub repository, and choose GooglePlacesSwift to be added to your Xcode project. 
+
 ## Requirements
 
 -   [Xcode](https://developer.apple.com/xcode/) version 15.0 or later
