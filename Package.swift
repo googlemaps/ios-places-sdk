@@ -18,12 +18,15 @@ import PackageDescription
 
 let package = Package(
   name: "GooglePlaces", platforms: [.iOS(.v15)],
-  products: [.library(name: "GooglePlaces", targets: ["GooglePlacesTarget"])], dependencies: [],
+  products: [
+    .library(name: "GooglePlaces", targets: ["GooglePlacesTarget"]),
+    .library(name: "GooglePlacesSwift", targets: ["GooglePlacesSwiftTarget"]),
+  ], dependencies: [],
   targets: [
     .binaryTarget(
       name: "GooglePlaces",
-      url: "https://dl.google.com/geosdk/swiftpm/9.1.0/GooglePlaces_3p.xcframework.zip",
-      checksum: "af996bead6be75ae063c7c740f8fade78a3f66a4743050522bc9b4da708c9d3c"
+      url: "https://dl.google.com/geosdk/swiftpm/9.2.0/GooglePlaces_3p.xcframework.zip",
+      checksum: "f405448349a48eaf478af1266c24210f27596caee769f38b5df0adc0a253271e"
     ),
     .target(
       name: "GooglePlacesTarget",
@@ -41,6 +44,22 @@ let package = Package(
         .linkedFramework("Security"),
         .linkedFramework("UIKit"),
       ]
+    ),
+    .binaryTarget(
+      name: "GooglePlacesSwift",
+      url: "https://dl.google.com/geosdk/swiftpm/0.3.0/google_places_swift.xcframework.zip",
+      checksum: "69933ea55ac1669380488d291e4ac1be6c11780fe6f2dc4a270087d3b6fb7c52"
+    ),
+    .target(
+      name: "GooglePlacesSwiftTarget",
+      dependencies: [
+        "GooglePlacesSwift",
+        "GooglePlacesTarget",
+      ],
+      path: "PlacesSwift",
+      sources: ["Empty.swift"],
+      resources: [.copy("Resources/GooglePlacesSwiftResources/GooglePlacesSwift.bundle")],
+      publicHeadersPath: "Sources"
     ),
   ]
 )
