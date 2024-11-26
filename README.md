@@ -51,6 +51,11 @@ dependency from `https://github.com/googlemaps/ios-places-sdk`, choosing version
 This time, on the **Choose Package Products** window, add the
 `GooglePlacesSwift` library to your project's target.
 
+**Note:** If you try to add `GooglePlacesSwift` from a deprecated repository,
+you will see the following error message: `Failed to resolve dependencies
+Dependencies could not be resolved because no versions of 'ios-places-swift-sdk'
+match the requirement 0.2.0 and root depends on 'ios-places-swift-sdk' 0.2.0.`
+
 ## Requirements
 
 -   [Xcode](https://developer.apple.com/xcode/) version 15.0 or later
