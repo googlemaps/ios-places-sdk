@@ -25,8 +25,8 @@ let package = Package(
   targets: [
     .binaryTarget(
       name: "GooglePlaces",
-      url: "https://dl.google.com/geosdk/swiftpm/9.4.0/GooglePlaces_3p.xcframework.zip",
-      checksum: "edc289b600d4e34553155e2c42a265e76224fda6a05e8b0da82e59a6750e5925"
+      url: "https://dl.google.com/geosdk/swiftpm/9.4.1/GooglePlaces_3p.xcframework.zip",
+      checksum: "2013d90eeac96e7481c8d09599d8fd5f2be362525136dd0845a2d3f1f68a0be2"
     ),
     .target(
       name: "GooglePlacesTarget",
@@ -40,6 +40,7 @@ let package = Package(
         .linkedLibrary("z"),
         .linkedFramework("CoreGraphics"),
         .linkedFramework("CoreLocation"),
+        .linkedFramework("CoreText"),
         .linkedFramework("QuartzCore"),
         .linkedFramework("Security"),
         .linkedFramework("UIKit"),
@@ -47,8 +48,8 @@ let package = Package(
     ),
     .binaryTarget(
       name: "GooglePlacesSwift",
-      url: "https://dl.google.com/geosdk/swiftpm/0.5.0/google_places_swift.xcframework.zip",
-      checksum: "b7606f71adce8b43fb262d099b1a3027ceb0133aeceb346870a10c3141319ac1"
+      url: "https://dl.google.com/geosdk/swiftpm/0.5.1/google_places_swift.xcframework.zip",
+      checksum: "d5c8974d3d1c9a64fc33ffc2a94ae4169b2e286b84d00a415af3bbb6ba1d2a83"
     ),
     .target(
       name: "GooglePlacesSwiftTarget",
