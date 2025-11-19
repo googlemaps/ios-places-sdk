@@ -92,7 +92,8 @@ See samples demonstrating use of the Places SDK for iOS on
 [developers.google.com](https://developers.google.com/maps/documentation/places/ios-sdk/code-samples)
 or on [GitHub](https://github.com/googlemaps-samples/maps-sdk-for-ios-samples).
 
-See samples demonstrating use of the Places Swift SDK for iOS on [GitHub](https://github.com/googlemaps-samples/ios-places-sdk-samples).
+See samples demonstrating use of the Places Swift SDK for iOS on
+[GitHub](https://github.com/googlemaps-samples/ios-places-sdk-samples).
 
 ## Documentation
 
@@ -113,6 +114,18 @@ Platform is subject to the
 
 ## Support
 
+For issues with the Places SDK for iOS, the primary support channel is to
+[open a support case](https://developers.google.com/maps/documentation/ios-sdk/support#contact-maps-support)
+with the Google Maps Platform support team. Alternatively, you can
+[file an issue](https://developers.google.com/maps/documentation/places/ios-sdk/support#issue-tracker)
+on the Places SDK for iOS issue tracker.
+
+If you would like to get answers to technical questions from other Google Maps
+Platform developers, ask through one of our
+[developer community channels](https://developers.google.com/maps/developer-community).
+You can also discuss on the Google Maps Platform
+[Discord server](https://discord.gg/hYsWbmk).
+
 This repository is offered via an open source license. It is not governed by the
 Google Maps Platform Support
 [Technical Support Services Guidelines](https://cloud.google.com/maps-platform/terms/tssg),
@@ -121,19 +134,9 @@ the [SLA](https://cloud.google.com/maps-platform/terms/sla), or the
 Google Maps Platform services used by the library remain subject to the Google
 Maps Platform Terms of Service).
 
+## Versioning
+
 This repository adheres to [semantic versioning](https://semver.org/) to
-indicate when backwards-incompatible changes are introduced.
-
--   For issues with the Places SDK for iOS,
-    [file an issue](https://developers.google.com/maps/documentation/places/ios-sdk/support#issue-tracker)
-    on the Places SDK for iOS issue tracker or
-    [open a support case](https://developers.google.com/maps/documentation/places/ios-sdk/support#contact-maps-support).
--   If you find a bug with the Swift package, please
-    [file an issue](https://github.com/googlemaps/ios-places-sdk/issues) on
-    GitHub.
-
-If you would like to get answers to technical questions from other Google Maps
-Platform developers, ask through one of our
-[developer community channels](https://developers.google.com/maps/developer-community).
-You can also discuss this library on the Google Maps Platform
-[Discord server](https://discord.gg/hYsWbmk).
+indicate when backwards-incompatible changes are introduced. Accordingly, while
+the library is in version 0.x, backwards-incompatible changes may be introduced
+at any time.
