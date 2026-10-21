@@ -1,4 +1,4 @@
-// swift-tools-version: 5.7
+// swift-tools-version: 5.9
 //
 // Copyright 2024 Google LLC
 //
@@ -17,7 +17,7 @@
 import PackageDescription
 
 let package = Package(
-  name: "GooglePlaces", platforms: [.iOS(.v16)],
+  name: "GooglePlaces", platforms: [.iOS(.v17)],
   products: [
     .library(name: "GooglePlaces", targets: ["GooglePlacesTarget"]),
     .library(name: "GooglePlacesSwift", targets: ["GooglePlacesSwiftTarget"]),
@@ -25,8 +25,8 @@ let package = Package(
   targets: [
     .binaryTarget(
       name: "GooglePlaces",
-      url: "https://dl.google.com/geosdk/swiftpm/11.2.0/GooglePlaces_3p.xcframework.zip",
-      checksum: "3162c8919b65b7168820b3beaf24d87235ad6923d14e922756238f9111509556"
+      url: "https://dl.google.com/geosdk/swiftpm/11.3.0/GooglePlaces_3p.xcframework.zip",
+      checksum: "6c26d65085affe0967a2f3a4d2820d028ee0c49cca7d7f8ea4405baa62dafa82"
     ),
     .target(
       name: "GooglePlacesTarget",
@@ -48,8 +48,8 @@ let package = Package(
     ),
     .binaryTarget(
       name: "GooglePlacesSwift",
-      url: "https://dl.google.com/geosdk/swiftpm/11.2.0/google_places_swift.xcframework.zip",
-      checksum: "163f44f805f2feb6144de0a639b79a0748204929f646be27336ef59c06dd5414"
+      url: "https://dl.google.com/geosdk/swiftpm/11.3.0/google_places_swift.xcframework.zip",
+      checksum: "8164ffd6218acee50ca2140dcf8280179c4d79aacf562eeb06fef99b28e6cdd9"
     ),
     .target(
       name: "GooglePlacesSwiftTarget",
