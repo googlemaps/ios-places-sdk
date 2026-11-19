@@ -57,7 +57,7 @@ match the requirement 0.2.0 and root depends on 'ios-places-swift-sdk' 0.2.0.`
 ## Requirements
 
 -   [Xcode](https://developer.apple.com/xcode/) version 16.0 or later
--   An app targeting iOS 16 or later
+-   An app targeting iOS 17 or later
 -   A Google Maps Platform
     [project](https://developers.google.com/maps/documentation/places/ios-sdk/cloud-setup)
     with the Places API enabled.
